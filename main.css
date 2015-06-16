@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    text-align: center;
+}
+.main{
+    display: inline-block;
+    text-align: left;
+}
+div.image{
+    margin-top: 10px;
+}
+label{
+    margin-right:10px;
+}
+input{
+    margin-top: 10px;
+}
+input:first-child{
+    margin-top: 20px;
+}
+input[type="button"]{
+    float: right;
+    width: 100px;
+}
+#date{
+    width: 150px;
+}
+#address{
+    width: 300px;
+}
+.help{
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 13px;
+}

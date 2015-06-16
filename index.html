@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="image"><img src="image/banlogo.png"></div>
+        <label for="massage">Enter a banner massage:</label>
+        <input type="text" id="massage" name="massage" size="32" onblur="validField(6, 32, this, document.getElementById('massage_help'))">
+        <span class="help" id="massage_help"></span>
+        <br>
+        <label for="zip">Enter a ZIP code of the location:</label>
+        <input type="text" id="zip" name="zipcode" size="5" onblur="notEmpty(this, document.getElementById('zip_help'))">
+        <span class="help" id="zip_help"></span>
+        <br>
+        <label for="date">Enter the date of massage to be show:</label>
+        <input type="text" id="date" onblur="notEmpty(this, document.getElementById('date_help'))">
+        <span class="help" id="date_help"></span>
+        <br>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" size="32" onblur="notEmpty(this, document.getElementById('name_help'))">
+        <span class="help" id="name_help"></span>
+        <br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="text" id="phone" name="phone" size="12" onblur="notEmpty(this, document.getElementById('phone_help'))">
+        <span class="help" id="phone_help"></span>
+        <br>
+        <label for="address">Enter your e-mail address:</label>
+        <input type="text" id="address" onblur="notEmpty(this, document.getElementById('address_help'))">
+        <span class="help" id="address_help"></span>
+        <br>
+        <input type="button" id="order" value="Order banner">
+    </div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
