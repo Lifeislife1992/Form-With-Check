@@ -18,6 +18,7 @@ label{
 }
 input{
     margin-top: 10px;
+    transition-duration: .3s;
 }
 input:first-child{
     margin-top: 20px;
@@ -32,9 +33,15 @@ input[type="button"]{
 #address{
     width: 300px;
 }
+.input{
+    position: relative;
+}
 .help{
     color: red;
     font-style: italic;
     text-decoration: underline;
     font-size: 13px;
+    position: absolute;
+    left: 0;
+    top: 30px;
 }
